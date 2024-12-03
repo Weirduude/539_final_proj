@@ -1,0 +1,121 @@
+
+
+#container {
+  display: flex;
+  align-items: flex-start; 
+  gap: 2%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; 
+}
+
+
+#map {
+  flex-grow: 1;
+  width: 60%;
+  height: 70%;
+  margin: 1%;
+  margin-top: 0;
+}
+
+#info-box {
+  margin-right: 1%;
+  width: 30%;
+  height: 100%;
+  background-color: #f9f9f9; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  padding: 1%;
+  line-height: 1.5;
+} 
+
+#info-box h2 {
+  font-size: 2em;
+}
+
+#info-box p {
+  font-size: 1.2em;
+  margin-bottom: 0.5%;
+}
+
+.point-image {
+  width: 60%;            /* Ensures the image scales to fit its container width */
+  height: auto;           /* Maintains the aspect ratio of the image */
+
+  border-radius: 5px;     /* Rounds the corners */
+  margin-top: 10px;  
+}
+
+.two-image-grid {
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 10px; /* Space between the images */
+  justify-items: center; /* Center images horizontally */
+  align-items: center; /* Center images vertically */
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.two-image-grid img {
+  width: 100%; /* Make the image fill the grid cell */
+  height: auto; /* Maintain the aspect ratio */
+  max-height: 300px; /* Set a uniform height limit */
+  object-fit: cover; /* Ensure the image fills the area without distortion */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for style */
+}
+
+.dragon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  gap: 20px;  /* Space between items */
+  padding: 20px;  /* Padding around the grid */
+}
+
+.dragon {
+  text-align: center;
+  padding: 10px;
+
+}
+
+.dragon-icon {
+  width: 70%;  /* Adjust the size of the dragon icon */
+  height: 70%;
+  margin-bottom: 10px;
+}
+
+.dragon-name {
+  display: block;  /* Ensures the name is on a new line */
+  font-size: 1rem;
+  margin-top: 5px;
+}
+#top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; 
+  background-color: #785A28; 
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; 
+}
+
+body {
+  margin: 0;
+  padding-top: 60px;
+  background-color: #060E1F;
+  font-family: Arial, sans-serif;
+}
+
