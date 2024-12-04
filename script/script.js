@@ -338,7 +338,6 @@ canvas.addEventListener("click", event => {
     activeHighlights = null;
   }
 
-  // Initial rendering
   drawMap();
 });
 
