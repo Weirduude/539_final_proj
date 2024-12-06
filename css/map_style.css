@@ -168,4 +168,11 @@ body {
   z-index: 1000; /* Ensures it is above other content */
 }
 
+h1 {
+  color: white;
+  font-size: 48px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+  text-align: center;
+}
 

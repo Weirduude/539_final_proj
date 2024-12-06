@@ -225,6 +225,27 @@ body {
     background-position: center;
   }
 
+#tft-item a {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 5px; 
+    display: inline-block; 
+}
+
+#heros-item a {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border-radius: 5px; 
+  display: inline-block; 
+}
+
+#map-item a {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border-radius: 5px; 
+  display: inline-block;  
+}
+
   #section4 {
     background-image: url('../images/map/arcane.webp');
     background-size: cover;
