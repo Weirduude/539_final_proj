@@ -61,8 +61,6 @@ body {
   background-color: #785A28; /* Matches the top bar */
   color: white;
   text-align: center;
-  height: 50px;
-  padding: 10px 0;
   font-size: 14px;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1000; /* Ensures it is above other content */
@@ -92,7 +90,7 @@ body {
 
 
 #section1 {
-  background-image: url('../images/summoner_back.avif');
+  background-image: url('../images/map/summoner_back.avif');
   background-size: cover;
   background-position: center;
 }
@@ -120,7 +118,7 @@ body {
 
 /* Section 2 */
 #section2 {
-    background-image: url('../images/runeterra.webp');
+    background-image: url('../images/map/runeterra.webp');
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -210,25 +208,25 @@ body {
   }
 
 #tft-item {
-  background-image: url('../images/tft.png');
+  background-image: url('../images/map/tft.png');
   background-size: cover;
   background-position: center;
 }
 
 #heros-item {
-    background-image: url('../images/heros.webp');
+    background-image: url('../images/map/heros.webp');
     background-size: cover;
     background-position: center;
   }
 
 #map-item {
-    background-image: url('../images/summoner_rift.webp');
+    background-image: url('../images/map/summoner_rift.webp');
     background-size: cover;
     background-position: center;
   }
 
   #section4 {
-    background-image: url('../images/arcane.webp');
+    background-image: url('../images/map/arcane.webp');
     background-size: cover;
     background-position: center;
     position: relative;

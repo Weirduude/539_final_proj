@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>League of Legends Synergy Calculator</title>
+  <link rel="stylesheet" href="css/hero_tft_style.css">
+</head>
+<body>
+  <div id="top-bar">
+    <nav>
+      <ul>
+        <li><a id="current-page-title" href="home.html">Home</a></li>
+        <li><a href="tft.html">Introduction to TFT</a></li>
+        <li><a href="hero.html">Introduction to Heros</a></li>
+        <li><a href="map.html">Introduction to Map</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="selection-area">
+
+  </div>
+
+  <div>
+    Drag and drop pieces here
+  </div>
+  
+  <div id="drop-area" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+  </div>
+
+  <button id="check-button">Check</button>
+  
+  <button id="remove-all">Remove all</button>
+
+  <div id="result-area">
+    <h3>Calculation Results</h3>
+    <ul id="result"></ul>
+  </div>
+
+
+  <script src="script/tft_script.js"></script>
+</body>
+</html>
