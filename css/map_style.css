@@ -176,3 +176,10 @@ h1 {
   text-align: center;
 }
 
+
+
+.map-point:focus {
+  outline: none;
+}
+
+

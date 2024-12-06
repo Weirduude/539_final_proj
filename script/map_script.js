@@ -295,6 +295,64 @@ const highlightFrames = {
 
 let activeHighlights = null;
 
+points.forEach((point) => {
+  const pointElement = document.createElement("div");
+  pointElement.classList.add("map-point");
+  pointElement.style.left = `${point.xPercent}%`;
+  pointElement.style.top = `${point.yPercent}%`;
+  pointElement.setAttribute("aria-label", point.label);
+  pointElement.setAttribute("role", "button");
+  pointElement.setAttribute("tabindex", "0"); // Make focusable
+  document.body.appendChild(pointElement);
+
+  // Handle click, keyboard events, and focus events
+  pointElement.addEventListener("click", () => handlePointInteraction(point));
+  pointElement.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      handlePointInteraction(point);
+    }
+  });
+  
+  // Add focus and blur handlers
+  pointElement.addEventListener("focus", () => {
+    activeHighlights = highlightFrames[point.label] || null;
+    drawMap();
+  });
+  
+  pointElement.addEventListener("blur", () => {
+    if (!infoBox.contains(document.activeElement)) {
+      activeHighlights = null;
+      drawMap();
+    }
+  });
+});
+
+// Consolidate point interaction logic
+function handlePointInteraction(point) {
+  showInfo(point);
+  activeHighlights = highlightFrames[point.label] || null;
+  drawMap();
+}
+
+// Update showInfo to handle focus management
+function showInfo(point) {
+  infoBox.innerHTML = `
+    <button id="close-info" aria-label="Close">Close</button>
+    ${point.descriptionHtml}
+  `;
+  infoBox.setAttribute("aria-hidden", "false");
+
+  const closeButton = document.getElementById("close-info");
+  closeButton.addEventListener("click", () => {
+    infoBox.innerHTML = "";
+    infoBox.setAttribute("aria-hidden", "true");
+    activeHighlights = null;
+    drawMap();
+  });
+  closeButton.focus();
+}
+
 
 const backgroundImage = new Image();
 backgroundImage.src = "images/map/summoner_rift.webp";
