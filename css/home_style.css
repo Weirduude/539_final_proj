@@ -95,7 +95,7 @@ body {
   background-position: center;
 }
 
-#section1 h2 {
+#section1 h1 {
   color: white;
   font-size: 48px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -125,7 +125,7 @@ body {
 }
 
 /* Title and Description */
-#section2 h2 {
+#section2 h1 {
     color: white;
     font-size: 48px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -165,7 +165,7 @@ body {
     flex-direction: column;   /* Stack the items vertically */
   }
   
-  #section3 h2 {
+  #section3 h1 {
     color: white;
     font-size: 48px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
