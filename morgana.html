@@ -12,33 +12,38 @@
 </div> -->
 
  <!-- Return to Main Menu Button -->
- <button class="return-btn" onclick="location.href='hero.html'">Return to Main Menu</button>
+ <header>
+  <button class="return-btn" onclick="location.href='hero.html';" tabindex="0">Return to Main Menu</button>
+</header>
  
+<main>
+  <h1>Morgana</h1>
+
   <!-- Morgana Group -->
   <div id="morgana" class="group active">
     <div class="group-header">
-      <img src="images/morgana/main.jpeg" alt="Morgana Main Image" class="main-image">
+      <img src="images/morgana/main.jpeg" alt="Morgana Main Image: How's she look like and Introduce to the skills" class="main-image">
     </div>
     <div class="container">
       <div class="left-panel">
-        <div class="box" data-video="videos/morgana/1.mp4" data-text="Morgana Video 1">
-          <img src="images/morgana/1.webp" alt="Video 1">
-        </div>
-        <div class="box" data-video="videos/morgana/2.mp4" data-text="Morgana Video 2">
-          <img src="images/morgana/2.webp" alt="Video 2">
-        </div>
-        <div class="box" data-video="videos/morgana/3.mp4" data-text="Morgana Video 3">
-          <img src="images/morgana/3.webp" alt="Video 3">
-        </div>
-        <div class="box" data-video="videos/morgana/4.mp4" data-text="Morgana Video 4">
-          <img src="images/morgana/4.webp" alt="Video 4">
-        </div>
-        <div class="box" data-video="videos/morgana/5.mp4" data-text="Morgana Video 5">
-          <img src="images/morgana/5.webp" alt="Video 5">
+        <div class="box" data-video="videos/morgana/1.mp4" data-text="Morgana Video 1" tabindex="0">
+          <img src="images/morgana/1.webp" alt="Video 1"> 
+        </div> 
+        <div class="box" data-video="videos/morgana/2.mp4" data-text="Morgana Video 2" tabindex="0">
+          <img src="images/morgana/2.webp" alt="Video 2"> 
+        </div> 
+        <div class="box" data-video="videos/morgana/3.mp4" data-text="Morgana Video 3" tabindex="0">
+          <img src="images/morgana/3.webp" alt="Video 3"> 
+        </div> 
+        <div class="box" data-video="videos/morgana/4.mp4" data-text="Morgana Video 4" tabindex="0">
+          <img src="images/morgana/4.webp" alt="Video 4"> 
+        </div> 
+        <div class="box" data-video="videos/morgana/5.mp4" data-text="Morgana Video 5" tabindex="0">
+          <img src="images/morgana/5.webp" alt="Video 5"> 
         </div>
       </div>
 
-          <!-- Middle Panel -->
+    <!-- Middle Panel -->
     <div class="middle-panel">
       <div class="description-box" id="description-1">
       <p id="image-description-1">Morgana returns 18% of her lifesteal based on spell damage dealt to enemy heroes, large minions, and large wilds.</p>
@@ -56,21 +61,27 @@
       <p id="image-description-5">Apply Dark Shackles to nearby enemy heroes, dealing them 175/250/325 (+0.7AP) Magic Damage and 20% slow for 3 sec. After 3 sec, they take an additional 175/250/325 (+0.7P) Magic Damage and are stunned for 1.5 sec. Enemy heroes can break this shackle by running away from Morgana.</p>
       </div>
   </div>
-      <div class="right-panel">
-        <div class="video-container">
-          <video id="morgana-main-video" controls>
-            <source src="" type="video/mp4">
-            Your browser does not support video playback.
-          </video>
-        </div>
-        <div class="text-container">
-          <p id="morgana-video-description">Select a video from the left.</p>
+        <!-- Right Panel -->
+        <div class="right-panel">
+          <div class="video-container">
+            <video id="morgana-main-video" controls>
+              <source src="" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </div>
+          <div class="text-container">
+            <p id="morgana-video-description">Select a video from the left.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
+  
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 School of Information, University of Michigan SI539 Final Project. For course use only.</p>
+  </footer>
 
-
-  <script src="script/script.js"></script>
+  <script src="script/hero_script.js"></script>
 </body>
 </html>

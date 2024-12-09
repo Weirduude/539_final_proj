@@ -10,65 +10,66 @@ body {
   margin-top: 300px;
 }
 
-/* Selection area style */
+/* Selection Area Style */
 #selection-area {
-    gap: 1px; /* 棋子之间的间距 */
-    padding: 2px;
-    width: 1000px;
-    background-color: #1f2735;
-    border-bottom: 1px solid #333;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    margin: 0 auto; 
-  }
+  gap: 1px; /* Spacing between pieces */
+  padding: 2px;
+  width: 1000px;
+  background-color: #1f2735;
+  border-bottom: 1px solid #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin: 0 auto; 
+}
 
-/* Piece images */
+/* Piece Images */
 #selection-area img {
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-  cursor: grab;
-  background-color: #000; /* Dark background */
-  transition: transform 0.2s ease-in-out;
+width: 50px;
+height: 50px;
+margin: 5px;
+cursor: grab;
+background-color: #000; /* Dark background */
+transition: transform 0.2s ease-in-out;
 }
 
 #selection-area img:hover {
-  transform: scale(1.1); /* Slightly enlarge on hover */
+transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
-/* Drop area style */
+/* Drop Area Style */
 #drop-area {
-    display: flex;
-    flex-wrap: wrap; /* 允许内容换行 */
-    justify-content: center; /* 水平方向居中 */
-    align-content: flex-start; /* 多行内容从顶部开始排列 */
-    gap: 5px; /* 棋子之间的间距 */
-    padding: 10px;
-    width: 500px; /* 容器宽度 */
-    height: auto; /* 自动适应高度 */
-    min-height: 250px; /* 初始最小高度 */
-    border: 2px dashed #2177b4; /* 边框样式 */
-    margin: 20px auto; /* 水平居中 */
-    background-color: #152238; /* 背景颜色 */
-    border-radius: 10px; /* 圆角 */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* 阴影 */
-    color: #c8aa6e; /* 字体颜色 */
-    overflow: auto; /* 如果超出容器，允许滚动 */
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap */
+  justify-content: center; /* Center horizontally */
+  align-content: flex-start; /* Align multiple rows from the top */
+  gap: 5px; /* Spacing between pieces */
+  padding: 10px;
+  width: 500px; /* Container width */
+  height: auto; /* Auto adjust height */
+  min-height: 250px; /* Initial minimum height */
+  border: 2px dashed #2177b4; /* Border style */
+  margin: 20px auto; /* Center horizontally */
+  background-color: #152238; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow */
+  color: #c8aa6e; /* Font color */
+  overflow: auto; /* Allow scrolling if content overflows */
 }
 
 .dropped-piece {
-    width: 100px; /* 放大的宽度 */
-    height: 100px; /* 放大的高度 */
-    margin: 10px; /* 与其他棋子的间距 */
-    cursor: grab;
-    border-radius: 5px;
-    background-color: #000; /* 棋子背景颜色 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* 添加阴影 */
-    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease; /* 添加平滑过渡效果 */
+  width: 100px; /* Enlarged width */
+  height: 100px; /* Enlarged height */
+  margin: 10px; /* Spacing with other pieces */
+  cursor: grab;
+  border-radius: 5px;
+  background-color: #000; /* Piece background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow */
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease; /* Smooth transition effect */
 }
 
 .dropped-piece:hover {
-    transform: scale(1.1); /* 鼠标悬停进一步放大 */
+  transform: scale(1.1); /* Further enlarge on hover */
 }
+
 
   
 
@@ -176,4 +177,20 @@ canvas {
   font-size: 14px;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1000; /* Ensures it is above other content */
+}
+
+/* Current Page Title Styling */
+#current-page-title {
+  background-color: #B8860B;
+}
+
+/* Styling for the H1 */
+h1 {
+  text-align: center; /* Center the text */
+  color: white; /* Set the color to white */
+  position: relative; /* Ensure it can be layered */
+  z-index: 10; /* Place it on the top layer */
+  margin-top: 20px; /* Add some spacing from the top */
+  font-size: 2.5rem; /* Adjust the font size for better visibility */
+  font-family: Arial, sans-serif; /* Optional: Choose a clean font */
 }

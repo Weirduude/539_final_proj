@@ -314,3 +314,19 @@ body {
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1000; /* Ensures it is above other content */
 }
+
+/* Current Page Title Styling */
+#current-page-title {
+  background-color: #B8860B;
+}
+
+/* Styling for the H1 */
+h1 {
+  text-align: center; /* Center the text */
+  color: white; /* Set the color to white */
+  position: relative; /* Ensure it can be layered */
+  z-index: 10; /* Place it on the top layer */
+  margin-top: 100px; /* Move the element further down */
+  font-size: 2.5rem; /* Adjust the font size for better visibility */
+  font-family: Arial, sans-serif; /* Optional: Choose a clean font */
+}

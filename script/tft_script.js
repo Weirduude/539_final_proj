@@ -65,24 +65,23 @@ const pieces = [
     { id: '59', class: '5', attributes: ['Conqueror', 'Dominator'], image: './images/5/tienan.png' },
 ];
 
-  
   // Initialize the selection area
   const selectionArea = document.getElementById('selection-area');
   const dropArea = document.getElementById('drop-area');
   const resultArea = document.getElementById('result');
   let attributesCount = {};
   
-  // Dynamically create piece images
-  pieces.forEach(piece => {
-    const img = document.createElement('img');
-    img.src = piece.image;
-    img.draggable = true;
-    img.id = piece.id;
-    img.ondragstart = (event) => {
-      event.dataTransfer.setData('text', piece.id);
-    };
-    selectionArea.appendChild(img);
-  });
+  // // Dynamically create piece images
+  // pieces.forEach(piece => {
+  //   const img = document.createElement('img');
+  //   img.src = piece.image;
+  //   img.draggable = true;
+  //   img.id = piece.id;
+  //   img.ondragstart = (event) => {
+  //     event.dataTransfer.setData('text', piece.id);
+  //   };
+  //   selectionArea.appendChild(img);
+  // });
   
 // Drag-and-drop logic
 function allowDrop(event) {

@@ -70,6 +70,17 @@ document.addEventListener("DOMContentLoaded", () => {
         nextBox.click();
     });
 
+    document.addEventListener("keydown", (event) => {
+        const activeElement = document.activeElement;
+      
+        // Enter or Space to activate focused elements
+        if ((event.key === "Enter" || event.key === " ") && activeElement.classList.contains("box")) {
+          activeElement.click();
+        }
+      });
+      
+      // Automatically focus on the first interactive element
+      document.querySelector(".return-btn").focus();
 });
 
 
