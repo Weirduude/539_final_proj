@@ -138,7 +138,6 @@ document.getElementById('remove-all').addEventListener('click', () => {
         });
     });
 
-    // 显示结果为每行一个属性
     resultArea.innerHTML = Object.entries(attributesCount)
         .map(([attr, count]) => `<li>${count} ${attr}</li>`)
         .join('');
